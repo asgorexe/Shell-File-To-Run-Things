@@ -1,6 +1,6 @@
 #!/bin/bash
 
-id="#1120" # Change when you change paths
+id="#1120" # Don't worry about this
 
 if [[ $1 = "-m" ]] # Change -m to whatever you want
 then
@@ -16,6 +16,10 @@ fi
 if [[ $1 = "ls" ]] # Ls is place holder, replace it with whatever argument you want to use to run the code in this if block
 then
   ls # Replace this with the command you want to run
+  # To run a bianary file (for instance, a.out) you'll have to do something like this:
+  # chmod +x [file_name]
+  # ./ [file_name]
+  # and it should work
 fi
 
 if [[ $1 = "-id" ]]
@@ -25,5 +29,5 @@ fi
 
 if [[ -z $1 ]] # If no arguments are given. -z means "if null"
 then
-  echo "Use to run random stuff"
+  echo "Use to run random stuff. Look at the source (VIM moment) for instructions on running your own scripts through this."
 fi
